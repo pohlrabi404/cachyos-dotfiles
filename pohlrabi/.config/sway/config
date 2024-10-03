@@ -173,17 +173,30 @@ blur {
 corner_radius 10
 
 # Shadow
-for_window [all] shadow enable
-for_window [all] shadow {
-    blur_radios 10
-    color #0000007F 
+shadows enable
+shadows {
+    blur_radios 50
+    color #ffffffff
     offset 5 5
 }
+
+default_dim_inactive 0.3
 
 for_window [all] opacity 0.95
 for_window [title=".*YouTube.*"] opacity 1
 
-include /etc/sway/config.d/*
+exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment DISPLAY \
+                                         SWAYSOCK \
+                                         WAYLAND_DISPLAY \
+                                         XDG_CURRENT_DESKTOP
+
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY \
+                                                  SWAYSOCK \
+                                                  XDG_CURRENT_DESKTOP=sway \
+                                                  WAYLAND_DISPLAY
+
 
 # Start flavours
 set $base00 #392751
