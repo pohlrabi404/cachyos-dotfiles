@@ -26,7 +26,6 @@ c.scrolling.smooth = True
 c.scrolling.bar = "always"
 
 c.content.fullscreen.window = True
-c.content.user_stylesheets = ['./default_icon.css']
 
 c.downloads.remove_finished = 10
 c.downloads.position = 'bottom'
