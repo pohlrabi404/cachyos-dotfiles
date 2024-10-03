@@ -1,0 +1,5 @@
+.tab:not([data-favicon]) .tab-icon {
+  content: '\udb81\udd9f'; /* Replace with your desired Nerd Font icon */
+  font-family: 'NotoSansMono-Regular'; /* Ensure this matches the name of your Nerd Font */
+  font-size: 16px; /* Adjust size as needed */
+}

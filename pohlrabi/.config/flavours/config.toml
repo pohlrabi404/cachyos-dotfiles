@@ -1,0 +1,24 @@
+# Commands go through bash
+shell = "bash -c '{}'"
+
+[[items]]
+file = "~/.config/sway/config"
+template = "sway"
+hook = "swaymsg reload"
+light = false
+
+[[items]]
+file = "~/.config/nvim/lua/plugins/theme.lua"
+template = "nvim"
+start = "-- start flavours"
+end = "-- end flavours"
+
+[[items]]
+file = "~/.config/kitty/kitty.conf"
+template = "kitty"
+hook = "killall -SIGUSR1 kitty"
+
+[[items]]
+file = "~/.config/qutebrowser/config.py"
+template = "qutebrowser"
+hook = "qutebrowser ':config-source'"

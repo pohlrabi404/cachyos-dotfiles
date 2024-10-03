@@ -1,0 +1,60 @@
+[managers.system]
+items = [
+  # Git
+  "git",
+
+  # Sway
+  "swayfx",
+  "swaybg",
+
+  # Widgets 
+  "waybar", #Remove when done with ags
+  "wofi",
+  "aylurs-gtk-shell",
+
+  # Font
+  "otf-font-awesome",
+  "ttf-firacode-nerd",
+
+  # Themer
+  "flavours",
+
+  # Symlinks
+  "stow",
+
+  # Neovim
+  "tree",
+  "zsh",
+  "fish", # System related
+  "kitty",
+  "neovim",
+  "ripgrep",
+  "fzf",
+  "luarocks",
+
+  # Image viewer
+  "ueberzugpp",
+  "chafa",
+  "openslide",
+
+  # Excel
+  "sc-im",
+
+  # Color picker
+  "hyprpicker",
+
+  # Screen Capture
+  "slurp",
+  "grim",
+  "swayimg",
+  "wl-clipboard",
+
+  # Font viewer
+  "fontforge",
+
+  # Browser
+  "qutebrowser",
+
+  # Javascript
+  "nodejs",
+]

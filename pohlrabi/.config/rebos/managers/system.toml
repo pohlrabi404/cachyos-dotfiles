@@ -1,0 +1,24 @@
+# --------------------------- #
+#    Manager Configuration    #
+# --------------------------- #
+
+# Make sure to enter the exact command you use as the normal user!
+# That means including 'sudo' or 'doas' or whatever if the command needs it.
+# Where you would put items, enter '#:?'.
+
+# Example: add = "sudo apt install #:?"
+add = "paru -S --needed --noconfirm #:?"
+remove = "paru -Rns --noconfirm #:?"
+sync = "paru -Syy --needed --noconfirm"
+upgrade = "paru -Syyu --needed --noconfirm"
+
+# ------------------------------- #
+#    Additional configuration.    #
+# ------------------------------- #
+
+plural_name = "system packages"
+
+hook_name = "system_packages"
+
+[config]
+many_args = true
