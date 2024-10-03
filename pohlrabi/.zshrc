@@ -32,7 +32,7 @@ function clocal()
 }
 
 # Login with ssh-key
-function login()
+function sshlogin()
 {
   eval $(ssh-agent -s)
   ssh-add "$1"
