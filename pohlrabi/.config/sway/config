@@ -1,3 +1,22 @@
+# Start flavours
+set $base00 #382119
+set $base01 #57433c
+set $base02 #75655e
+set $base03 #938780
+set $base04 #b2a8a2
+set $base05 #d0cac5
+set $base06 #d7d2cd
+set $base07 #dedad6
+set $base08 #6378a4
+set $base09 #5f7a9b
+set $base0A #d54728
+set $base0B #a6676a
+set $base0C #986c7f
+set $base0D #c6c0ba
+set $base0E #647a95
+set $base0F #5c79aa
+# End flavours
+
 set $mod Mod4
 # Home row direction keys, like vim
 set $left h
@@ -174,11 +193,11 @@ corner_radius 10
 
 # Shadow
 shadows enable
-shadows {
-    blur_radios 50
-    color #ffffffff
-    offset 5 5
-}
+shadows_on_csd enable
+shadow_blur_radius 50
+shadow_color $base0A 
+shadow_inactive_color $base00   
+shadow_offset 0 0
 
 default_dim_inactive 0.3
 
@@ -198,24 +217,6 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
                                                   WAYLAND_DISPLAY
 
 
-# Start flavours
-set $base00 #392751
-set $base01 #5b4a6e
-set $base02 #7d6d8b
-set $base03 #9e90a8
-set $base04 #c0b3c5
-set $base05 #e1d6e2
-set $base06 #e6dce6
-set $base07 #eae2ea
-set $base08 #9555eb
-set $base09 #c65bdd
-set $base0A #b96bea
-set $base0B #bb64c3
-set $base0C #ec83fa
-set $base0D #637be4
-set $base0E #dd7bf4
-set $base0F #9f57d6
-# End flavours
 client.focused           $base0A $base0A $base0A $base0A $base0A
 client.unfocused         $base02 $base02 $base02 $base02 $base02
 client.focused_inactive  $base02 $base02 $base02 $base02 $base02
