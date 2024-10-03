@@ -1,31 +1,60 @@
 [managers.system]
 items = [
+  # Git
   "git",
+
+  # Sway
   "swayfx",
   "swaybg",
-  "waybar", 
-  "wofi", 
-  "aylurs-gtk-shell", 
-  "otf-font-awesome", 
-  "ttf-firacode-nerd", 
-  "flavours", "stow", 
-  "tree", 
-  "zsh", 
-  "fish", 
-  "kitty", 
-  "neovim", 
-  "ripgrep", 
-  "fzf", 
-  "luarocks", 
-  "ueberzugpp", 
-  "chafa", 
-  "openslide", 
-  "sc-im", 
-  "hyprpicker", 
-  "slurp", 
-  "grim", 
-  "swayimg", 
-  "wl-clipboard", 
-  "qutebrowser", 
-  "nodejs"
+
+  # Widgets 
+  "waybar", #Remove when done with ags
+  "wofi",
+  "aylurs-gtk-shell",
+
+  # Font
+  "otf-font-awesome",
+  "ttf-firacode-nerd",
+
+  # Themer
+  "flavours",
+
+  # Symlinks
+  "stow",
+
+  # Neovim
+  "tree",
+  "zsh",
+  "fish", # System related
+  "kitty",
+  "neovim",
+  "ripgrep",
+  "fzf",
+  "luarocks",
+
+  # Image viewer
+  "ueberzugpp",
+  "chafa",
+  "openslide",
+
+  # Excel
+  "sc-im",
+
+  # Color picker
+  "hyprpicker",
+
+  # Screen Capture
+  "slurp",
+  "grim",
+  "swayimg",
+  "wl-clipboard",
+
+  # Font viewer
+  "fontforge",
+
+  # Browser
+  "qutebrowser",
+
+  # Javascript
+  "nodejs",
 ]
