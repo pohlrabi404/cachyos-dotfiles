@@ -163,8 +163,11 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+Ctrl+r mode "resize"
-exec killall waybar && waybar &
 # Read `man 5 sway-bar` for more information about this section.
+exec_always killall waybar
+bar {
+  swaybar_command waybar
+}
 
 # Border
 default_border pixel 5
