@@ -39,7 +39,9 @@
          }
      },
     "sway/window": {
-    	"max-length": 50
+      "format": "",
+      "icon": true,
+      "icon-size": 24,
     },
     "sway/mode": {
         "format": "<span style=\"italic\"><span color=\"#ff79c6\"></span>  {}</span>", // Icon: expand-arrows-alt

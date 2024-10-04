@@ -11,6 +11,7 @@ items = [
   "waybar",           #Remove when done with ags
   "wofi",
   "aylurs-gtk-shell",
+  "dunst",            #Remove when done with ags, maybe, in the future
 
   # Font
   "otf-font-awesome",
