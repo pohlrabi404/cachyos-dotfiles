@@ -8,7 +8,7 @@ hook = "swaymsg reload"
 light = false
 
 [[items]]
-file = "~/.config/nvim/lua/plugins/theme.lua"
+file = "~/.config/nvim/lua/plugins/mini.lua"
 template = "nvim"
 start = "-- start flavours"
 end = "-- end flavours"
@@ -22,3 +22,9 @@ hook = "killall -SIGUSR1 kitty"
 file = "~/.config/qutebrowser/config.py"
 template = "qutebrowser"
 hook = "qutebrowser ':config-source'"
+
+[[items]]
+file = "~/.config/waybar/style.css"
+template = "waybar"
+start = "/*Start flavours*/"
+end = "/*End flavours*/"

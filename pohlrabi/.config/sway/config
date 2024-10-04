@@ -1,20 +1,20 @@
 # Start flavours
-set $base00 #392751
-set $base01 #5b4a6e
-set $base02 #7d6d8b
-set $base03 #9e90a8
-set $base04 #c0b3c5
-set $base05 #e1d6e2
-set $base06 #e6dce6
-set $base07 #eae2ea
-set $base08 #9555eb
-set $base09 #c65bdd
-set $base0A #b96bea
-set $base0B #bb64c3
-set $base0C #ec83fa
-set $base0D #637be4
-set $base0E #dd7bf4
-set $base0F #9f57d6
+set $base00 #262c50
+set $base01 #484f6c
+set $base02 #697288
+set $base03 #8b95a4
+set $base04 #acb8c0
+set $base05 #cddadc
+set $base06 #d5e0e1
+set $base07 #dce5e6
+set $base08 #799b65
+set $base09 #4b3dff
+set $base0A #8e6ba2
+set $base0B #747883
+set $base0C #a23dff
+set $base0D #387ac5
+set $base0E #476aff
+set $base0F #7762ef
 # End flavours
 
 set $mod Mod4
@@ -163,11 +163,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+Ctrl+r mode "resize"
+exec killall waybar && waybar &
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    swaybar_command waybar
-    position top
-}
 
 # Border
 default_border pixel 5

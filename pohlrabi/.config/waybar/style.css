@@ -1,0 +1,156 @@
+/*Start flavours*/
+@define-color base00 #262c50;
+@define-color base01 #484f6c;
+@define-color base02 #697288;
+@define-color base03 #8b95a4;
+@define-color base04 #acb8c0;
+@define-color base05 #cddadc;
+@define-color base06 #d5e0e1;
+@define-color base07 #dce5e6;
+@define-color base08 #799b65;
+@define-color base09 #4b3dff;
+@define-color base0A #8e6ba2;
+@define-color base0B #747883;
+@define-color base0C #a23dff;
+@define-color base0D #387ac5;
+@define-color base0E #476aff;
+@define-color base0F #7762ef;
+/*End flavours*/
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Roboto,'Font Awesome 5', 'SFNS Display',  Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0,0,0,0);
+    color: @base07;
+}
+
+window#waybar.hidden {
+    opacity: 0.0;
+}
+
+#workspaces {
+    background-color: @base00;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+#workspaces button {
+    margin: 0 5px;
+    padding: 0;
+    background: transparent;
+    color: @base07;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.focused {
+    border-bottom: 2px solid @base0C;
+    color: @base0C;
+}
+
+#workspaces button.urgent {
+    color: #ff5555;
+}
+
+#workspaces button:hover {
+    box-shadow: none;
+    text-shadow: none;
+    border-bottom: 2px solid @base0C;
+}
+
+#window {
+    background-color: @base00;
+    border-radius: 0 20px 20px 0;
+    padding: 0 20px;
+    margin: 0 10px 0 0;
+}
+
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+    padding: 0 20px;
+    margin: 0 10px;
+    background-color: @base00;
+    color: @base07;
+    border-radius: 20px;
+}
+
+#clock {
+    
+}
+
+#battery {
+}
+
+#battery.charging {
+}
+
+@keyframes blink {
+    to {
+        background-color: @base07;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+}
+
+#memory {
+}
+
+#backlight {
+}
+
+#network {
+    margin: 0 0 0 10px;
+    padding:  0 25px 0 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+#network.disconnected {
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}
+
+#custom-media {
+}
+
+.custom-spotify {
+}
+
+.custom-vlc {
+}
+
+#temperature {
+}
+
+#temperature.critical {
+}
+
+#tray {
+    border-radius: 0;
+    margin: 0;
+    padding: 0 20px 0 0;
+}
+
+#idle_inhibitor {
+}
+
+#idle_inhibitor.activated {
+}

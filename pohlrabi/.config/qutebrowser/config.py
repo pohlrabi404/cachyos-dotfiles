@@ -36,22 +36,22 @@ c.downloads.position = 'bottom'
 # Template author: theova
 # Commentary: Tinted Theming: (https://github.com/tinted-theming)
 # Start flavours
-base00 = "#392751"
-base01 = "#5b4a6e"
-base02 = "#7d6d8b"
-base03 = "#9e90a8"
-base04 = "#c0b3c5"
-base05 = "#e1d6e2"
-base06 = "#e6dce6"
-base07 = "#eae2ea"
-base08 = "#9555eb"
-base09 = "#c65bdd"
-base0A = "#b96bea"
-base0B = "#bb64c3"
-base0C = "#ec83fa"
-base0D = "#637be4"
-base0E = "#dd7bf4"
-base0F = "#9f57d6"
+base00 = "#262c50"
+base01 = "#484f6c"
+base02 = "#697288"
+base03 = "#8b95a4"
+base04 = "#acb8c0"
+base05 = "#cddadc"
+base06 = "#d5e0e1"
+base07 = "#dce5e6"
+base08 = "#799b65"
+base09 = "#4b3dff"
+base0A = "#8e6ba2"
+base0B = "#747883"
+base0C = "#a23dff"
+base0D = "#387ac5"
+base0E = "#476aff"
+base0F = "#7762ef"
 # End flavours
 # set qutebrowser colors
 
