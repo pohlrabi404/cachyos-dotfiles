@@ -1,20 +1,20 @@
 /*Start flavours*/
-@define-color base00 #262c50;
-@define-color base01 #484f6c;
-@define-color base02 #697288;
-@define-color base03 #8b95a4;
-@define-color base04 #acb8c0;
-@define-color base05 #cddadc;
-@define-color base06 #d5e0e1;
-@define-color base07 #dce5e6;
-@define-color base08 #799b65;
-@define-color base09 #4b3dff;
-@define-color base0A #8e6ba2;
-@define-color base0B #747883;
-@define-color base0C #a23dff;
-@define-color base0D #387ac5;
-@define-color base0E #476aff;
-@define-color base0F #7762ef;
+@define-color base00 #482223;
+@define-color base01 #674647;
+@define-color base02 #856b6b;
+@define-color base03 #a48f8e;
+@define-color base04 #c3b4b2;
+@define-color base05 #e1d8d6;
+@define-color base06 #e6dedc;
+@define-color base07 #eae4e2;
+@define-color base08 #a26a63;
+@define-color base09 #8d7272;
+@define-color base0A #c2517f;
+@define-color base0B #8e7171;
+@define-color base0C #8e6d92;
+@define-color base0D #d74343;
+@define-color base0E #8c8e87;
+@define-color base0F #dd79ae;
 /*End flavours*/
 
 * {
@@ -70,7 +70,7 @@ window#waybar.hidden {
     margin: 0 10px 0 0;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+#clock, #date, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
     padding: 0 20px;
     margin: 0 10px;
     background-color: @base00;
@@ -79,7 +79,9 @@ window#waybar.hidden {
 }
 
 #clock {
-    
+}
+
+#date {
 }
 
 #battery {

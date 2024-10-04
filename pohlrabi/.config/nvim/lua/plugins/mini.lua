@@ -6,10 +6,10 @@ return {
     require('mini.base16').setup({
       palette = {
         -- start flavours
-    base00 = '#262c50', base01 = '#484f6c', base02 = '#697288', base03 = '#8b95a4',
-    base04 = '#acb8c0', base05 = '#cddadc', base06 = '#d5e0e1', base07 = '#dce5e6',
-    base08 = '#799b65', base09 = '#4b3dff', base0A = '#8e6ba2', base0B = '#747883',
-    base0C = '#a23dff', base0D = '#387ac5', base0E = '#476aff', base0F = '#7762ef',
+    base00 = '#482223', base01 = '#674647', base02 = '#856b6b', base03 = '#a48f8e',
+    base04 = '#c3b4b2', base05 = '#e1d8d6', base06 = '#e6dedc', base07 = '#eae4e2',
+    base08 = '#a26a63', base09 = '#8d7272', base0A = '#c2517f', base0B = '#8e7171',
+    base0C = '#8e6d92', base0D = '#d74343', base0E = '#8c8e87', base0F = '#dd79ae',
         -- end flavours
       },
     })

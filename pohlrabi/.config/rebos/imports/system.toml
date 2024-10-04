@@ -8,13 +8,21 @@ items = [
   "swaybg",
 
   # Widgets 
-  "waybar", #Remove when done with ags
+  "waybar",           #Remove when done with ags
   "wofi",
   "aylurs-gtk-shell",
 
   # Font
   "otf-font-awesome",
   "ttf-firacode-nerd",
+
+  # Japanese Font
+  "ttf-koruri",
+  "fcitx5",
+  "fcitx5-configtool",
+  "fcitx5-gtk",
+  "fcitx5-qt",
+  "fcitx5-mozc",
 
   # Themer
   "flavours",
@@ -25,7 +33,7 @@ items = [
   # Neovim
   "tree",
   "zsh",
-  "fish", # System related
+  "fish",     # System related
   "kitty",
   "neovim",
   "ripgrep",
