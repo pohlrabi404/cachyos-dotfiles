@@ -1,4 +1,5 @@
 require("config.lazy")
+require("config.picker")
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
@@ -15,9 +16,7 @@ vim.keymap.set('n', 'gs', '<Home>')
 -- Telescope keymapping
 local telescope = require('telescope.builtin')
 local which = require('telescope.actions')
-vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', telescope.live_grep, { desc = 'Telescope grep' })
 vim.keymap.set('n', '<leader>gb', telescope.buffers, { desc = 'Telescope go to buffers' })
-vim.keymap.set('n', '<leader>fb', ':Telescope file_browser<CR>', { desc = 'Telescope find browser' })
-
+vim.keymap.set('n', '<leader>ff', ':Telescope file_browser<CR>', { desc = 'Telescope find browser' })
 
