@@ -29,3 +29,7 @@ template = "waybar"
 start = "/*Start flavours*/"
 end = "/*End flavours*/"
 hook = "killall waybar && waybar &"
+[[items]]
+file = "~/.config/waybar/config"
+template = "waybar-config"
+rewrite = true

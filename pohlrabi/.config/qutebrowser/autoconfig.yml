@@ -26,3 +26,9 @@ settings:
       <Enter>: <Return>
       <Shift-Enter>: <Return>
       <Shift-Return>: <Return>
+  content.desktop_capture:
+    https://discord.com: true
+  content.media.audio_capture:
+    https://discord.com: true
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: true

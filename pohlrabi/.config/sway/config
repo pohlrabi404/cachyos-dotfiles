@@ -1,20 +1,20 @@
 # Start flavours
-set $base00 #462126
-set $base01 #634246
-set $base02 #7f6467
-set $base03 #9c8588
-set $base04 #b9a6a8
-set $base05 #d5c8c9
-set $base06 #dcd0d1
-set $base07 #e2d8d9
-set $base08 #1f8c74
-set $base09 #b75d67
-set $base0A #387fa6
-set $base0B #d7405b
-set $base0C #308391
-set $base0D #22829d
-set $base0E #1e8398
-set $base0F #ee162f
+set $base00 #33264f
+set $base01 #56486b
+set $base02 #786a87
+set $base03 #9a8ca3
+set $base04 #bcafbf
+set $base05 #ded1db
+set $base06 #e3d8e0
+set $base07 #e8dee5
+set $base08 #8168cb
+set $base09 #c55461
+set $base0A #5d79aa
+set $base0B #ad4cd4
+set $base0C #6b5fff
+set $base0D #5e7d8b
+set $base0E #7d5aff
+set $base0F #6f63f5
 # End flavours
 
 set $mod Mod4
@@ -30,15 +30,20 @@ set $term kitty
 set $menu wofi --show drun
 # Wall paper
 output * bg $(cat ~/.bg) fill
+# Waybar
+exec_always killall waybar
+exec_always waybar 
+# Language Input
+exec fcitx5
 ### Idle configuration
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'swaylock -f -c 000000'
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -47,12 +52,12 @@ output * bg $(cat ~/.bg) fill
 #
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+  input "1267:226:Elan_Touchpad" {
+      dwt enabled
+      tap enabled
+      natural_scroll enabled
+      middle_emulation enabled
+  }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -163,12 +168,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+Ctrl+r mode "resize"
-# Read `man 5 sway-bar` for more information about this section.
-exec_always killall waybar
-bar {
-  swaybar_command waybar
-}
-
+exec settheme $(cat .bg)
 # Border
 default_border pixel 5
 gaps {

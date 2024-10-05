@@ -34,12 +34,13 @@ items = [
   # Neovim
   "tree",
   "zsh",
-  "fish",     # System related
+  "fish",        # System related
   "kitty",
   "neovim",
   "ripgrep",
   "fzf",
   "luarocks",
+  "zsh-vi-mode",
 
   # Image viewer
   "ueberzugpp",
@@ -47,7 +48,8 @@ items = [
   "openslide",
 
   # Excel
-  "sc-im",
+  "pdfjs",
+  "libreoffice-fresh",
 
   # Color picker
   "hyprpicker",
@@ -57,6 +59,7 @@ items = [
   "grim",
   "swayimg",
   "wl-clipboard",
+  "wf-recorder",
 
   # Font viewer
   "fontforge",
@@ -66,4 +69,5 @@ items = [
 
   # Javascript
   "nodejs",
+
 ]
