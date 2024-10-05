@@ -32,3 +32,5 @@ settings:
     https://discord.com: true
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  statusbar.show:
+    global: in-mode

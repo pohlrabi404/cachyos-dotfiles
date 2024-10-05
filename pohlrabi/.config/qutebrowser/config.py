@@ -1,4 +1,6 @@
 config.load_autoconfig(True)
+config.bind('f', 'set statusbar.show never ;; hint ;; set statusbar.show in-mode')
+config.bind('lb', ':bookmark-load -t')
 # Search Engine
 c.url.searchengines = {
   'DEFAULT':  'https://google.com/search?hl=en&q={}',
@@ -31,28 +33,37 @@ c.content.pdfjs = True
 c.downloads.remove_finished = 10
 c.downloads.position = 'bottom'
 
+c.statusbar.show = 'in-mode'
+c.statusbar.padding = {
+        'bottom': 1,
+        'left': 10,
+        'right': 10,
+        'top': 1
+        }
+c.window.transparent = True
+
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Scheme name: Generated
 # Scheme author: Flavours
 # Template author: theova
 # Commentary: Tinted Theming: (https://github.com/tinted-theming)
 # Start flavours
-base00 = "#33264f"
-base01 = "#56486b"
-base02 = "#786a87"
-base03 = "#9a8ca3"
-base04 = "#bcafbf"
-base05 = "#ded1db"
-base06 = "#e3d8e0"
-base07 = "#e8dee5"
-base08 = "#8168cb"
-base09 = "#c55461"
-base0A = "#5d79aa"
-base0B = "#ad4cd4"
-base0C = "#6b5fff"
-base0D = "#5e7d8b"
-base0E = "#7d5aff"
-base0F = "#6f63f5"
+base00 = "#262c50"
+base01 = "#484f6c"
+base02 = "#697288"
+base03 = "#8b95a4"
+base04 = "#acb8c0"
+base05 = "#cddadc"
+base06 = "#d5e0e1"
+base07 = "#dce5e6"
+base08 = "#799b65"
+base09 = "#4b3dff"
+base0A = "#8e6ba2"
+base0B = "#747883"
+base0C = "#a23dff"
+base0D = "#387ac5"
+base0E = "#476aff"
+base0F = "#7762ef"
 # End flavours
 # set qutebrowser colors
 
@@ -203,7 +214,7 @@ c.colors.prompts.selected.fg = base05
 c.colors.statusbar.normal.fg = base0B
 
 # Background color of the statusbar.
-c.colors.statusbar.normal.bg = base00
+c.colors.statusbar.normal.bg = base00 
 
 # Foreground color of the statusbar in insert mode.
 c.colors.statusbar.insert.fg = base00

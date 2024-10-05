@@ -1,20 +1,20 @@
 /*Start flavours*/
-@define-color base00 #33264f;
-@define-color base01 #56486b;
-@define-color base02 #786a87;
-@define-color base03 #9a8ca3;
-@define-color base04 #bcafbf;
-@define-color base05 #ded1db;
-@define-color base06 #e3d8e0;
-@define-color base07 #e8dee5;
-@define-color base08 #8168cb;
-@define-color base09 #c55461;
-@define-color base0A #5d79aa;
-@define-color base0B #ad4cd4;
-@define-color base0C #6b5fff;
-@define-color base0D #5e7d8b;
-@define-color base0E #7d5aff;
-@define-color base0F #6f63f5;
+@define-color base00 #262c50;
+@define-color base01 #484f6c;
+@define-color base02 #697288;
+@define-color base03 #8b95a4;
+@define-color base04 #acb8c0;
+@define-color base05 #cddadc;
+@define-color base06 #d5e0e1;
+@define-color base07 #dce5e6;
+@define-color base08 #799b65;
+@define-color base09 #4b3dff;
+@define-color base0A #8e6ba2;
+@define-color base0B #747883;
+@define-color base0C #a23dff;
+@define-color base0D #387ac5;
+@define-color base0E #476aff;
+@define-color base0F #7762ef;
 /*End flavours*/
 
 * {

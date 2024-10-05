@@ -1,20 +1,20 @@
 # Start flavours
-set $base00 #33264f
-set $base01 #56486b
-set $base02 #786a87
-set $base03 #9a8ca3
-set $base04 #bcafbf
-set $base05 #ded1db
-set $base06 #e3d8e0
-set $base07 #e8dee5
-set $base08 #8168cb
-set $base09 #c55461
-set $base0A #5d79aa
-set $base0B #ad4cd4
-set $base0C #6b5fff
-set $base0D #5e7d8b
-set $base0E #7d5aff
-set $base0F #6f63f5
+set $base00 #262c50
+set $base01 #484f6c
+set $base02 #697288
+set $base03 #8b95a4
+set $base04 #acb8c0
+set $base05 #cddadc
+set $base06 #d5e0e1
+set $base07 #dce5e6
+set $base08 #799b65
+set $base09 #4b3dff
+set $base0A #8e6ba2
+set $base0B #747883
+set $base0C #a23dff
+set $base0D #387ac5
+set $base0E #476aff
+set $base0F #7762ef
 # End flavours
 
 set $mod Mod4
@@ -28,8 +28,6 @@ set $right l
 set $term kitty
 # File launcher
 set $menu wofi --show drun
-# Wall paper
-output * bg $(cat ~/.bg) fill
 # Waybar
 exec_always killall waybar
 exec_always waybar 

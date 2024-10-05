@@ -1,23 +1,32 @@
 -- Alternatively, you can provide a table specifying your colors to the setup function.
-return { 
+return {
   'echasnovski/mini.nvim',
   version = false,
   config = function()
     require('mini.base16').setup({
       palette = {
         -- start flavours
-    base00 = '#33264f', base01 = '#56486b', base02 = '#786a87', base03 = '#9a8ca3',
-    base04 = '#bcafbf', base05 = '#ded1db', base06 = '#e3d8e0', base07 = '#e8dee5',
-    base08 = '#8168cb', base09 = '#c55461', base0A = '#5d79aa', base0B = '#ad4cd4',
-    base0C = '#6b5fff', base0D = '#5e7d8b', base0E = '#7d5aff', base0F = '#6f63f5',
+        base00 = '#262c50',
+        base01 = '#484f6c',
+        base02 = '#697288',
+        base03 = '#8b95a4',
+        base04 = '#acb8c0',
+        base05 = '#cddadc',
+        base06 = '#d5e0e1',
+        base07 = '#dce5e6',
+        base08 = '#799b65',
+        base09 = '#4b3dff',
+        base0A = '#8e6ba2',
+        base0B = '#747883',
+        base0C = '#a23dff',
+        base0D = '#387ac5',
+        base0E = '#476aff',
+        base0F = '#7762ef',
         -- end flavours
       },
     })
     require('mini.ai').setup()
     require('mini.pairs').setup()
-
+    require('mini.jump2d').setup()
   end
 }
-
-
-
