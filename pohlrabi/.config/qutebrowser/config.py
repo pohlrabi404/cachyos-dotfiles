@@ -1,6 +1,7 @@
 config.load_autoconfig(True)
-config.bind('f', 'set statusbar.show never ;; hint ;; set statusbar.show in-mode')
+config.bind('f', 'set statusbar.show never ;; hint')
 config.bind('lb', ':bookmark-load -t')
+config.bind('<Escape>', 'set statusbar.show in-mode;; fake-key <Escape>')
 # Search Engine
 c.url.searchengines = {
   'DEFAULT':  'https://google.com/search?hl=en&q={}',

@@ -4,8 +4,16 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
-
 vim.opt.relativenumber = true
+vim.opt.scrolloff = 10
+vim.opt.inccommand = "split"
+vim.opt.incsearch = true
+vim.opt.title = true
+vim.opt.undofile = true
+vim.opt.fillchars:append(',eob: ')
+
+vim.keymap.set('n', '<leader>to', function() vim.opt.scrolloff = 999 - vim.o.scrolloff end)
+
 vim.cmd("set ignorecase smartcase")
 
 -- Basic keymapping
