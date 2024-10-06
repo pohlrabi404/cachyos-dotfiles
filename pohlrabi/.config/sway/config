@@ -1,20 +1,20 @@
 # Start flavours
-set $base00 #262c50
-set $base01 #484f6c
-set $base02 #697288
-set $base03 #8b95a4
-set $base04 #acb8c0
-set $base05 #cddadc
-set $base06 #d5e0e1
-set $base07 #dce5e6
-set $base08 #799b65
-set $base09 #4b3dff
-set $base0A #8e6ba2
-set $base0B #747883
-set $base0C #a23dff
-set $base0D #387ac5
-set $base0E #476aff
-set $base0F #7762ef
+set $base00 #25243a
+set $base01 #49475b
+set $base02 #6d6a7c
+set $base03 #908d9d
+set $base04 #b4b0be
+set $base05 #d8d3df
+set $base06 #dedae4
+set $base07 #e3e0e9
+set $base08 #727a77
+set $base09 #b65f5c
+set $base0A #747978
+set $base0B #cb4a6f
+set $base0C #7573a9
+set $base0D #847195
+set $base0E #867097
+set $base0F #7872a7
 # End flavours
 
 set $mod Mod4
@@ -31,6 +31,7 @@ set $menu wofi --show drun
 # Waybar
 exec_always killall waybar
 exec_always waybar 
+exec_always swaymsg output "*" bg $(awk '{print $1}' ~/.bg) fill 
 # Language Input
 exec fcitx5
 ### Idle configuration
@@ -151,22 +152,15 @@ exec swayidle -w \
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 
-mode "resize" {
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $mod+Ctrl+$left resize shrink width 10px
+    bindsym $mod+Ctrl+$down resize grow height 10px
+    bindsym $mod+Ctrl+$up resize shrink height 10px
+    bindsym $mod+Ctrl+$right resize grow width 10px
 
-    # Return to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-bindsym $mod+Ctrl+r mode "resize"
-exec settheme $(cat .bg)
 # Border
 default_border pixel 5
 gaps {
@@ -193,7 +187,7 @@ corner_radius 10
 shadows enable
 shadows_on_csd enable
 shadow_blur_radius 50
-shadow_color $base0A 
+shadow_color $base0C 
 shadow_inactive_color $base00   
 shadow_offset 0 0
 
@@ -215,7 +209,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
                                                   WAYLAND_DISPLAY
 
 
-client.focused           $base0A $base0A $base0A $base0A $base0A
+client.focused           $base0C $base0C $base0C $base0C $base0C
 client.unfocused         $base02 $base02 $base02 $base02 $base02
 client.focused_inactive  $base02 $base02 $base02 $base02 $base02
 client.urgent            $base02 $base02 $base02 $base02 $base02

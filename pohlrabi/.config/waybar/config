@@ -60,18 +60,18 @@
     },
     "clock": {
         "interval": 1,
-        "format": "<span color=\"#799b65\"></span>  {:%H : %M : %S}",
+        "format": "<span color=\"#727a77\"></span>  {:%H : %M : %S}",
     },
     "clock#date": {
       "interval": 10,
-      "format": "<span color=\"#7762ef\"></span>  {:%e %b %Y}", // Icon: calendar-alt
+      "format": "<span color=\"#7872a7\"></span>  {:%e %b %Y}", // Icon: calendar-alt
       "tooltip-format": "{:%e %B %Y}",
     },
     "cpu": {
-        "format": "<span color=\"#8e6ba2\"></span>  {usage}%  ({load})"
+        "format": "<span color=\"#747978\"></span>  {usage}%  ({load})"
     },
     "memory": {
-        "format": "<span color=\"#476aff\"></span>  {}%"
+        "format": "<span color=\"#867097\"></span>  {}%"
     },
     "battery": {
 	"interval": 10,
@@ -93,14 +93,14 @@
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
-        "format-wifi": "<span color=\"#a23dff\"></span>",
-        "format-ethernet": "<span color=\"#a23dff\"></span>",
-        "format-disconnected": "<span color=\"#a23dff\">⚠</span>",
+        "format-wifi": "<span color=\"#7573a9\"></span>",
+        "format-ethernet": "<span color=\"#7573a9\"></span>",
+        "format-disconnected": "<span color=\"#7573a9\">⚠</span>",
         "interval" : 7
     },
     "pulseaudio": {
         //"scroll-step": 1,
-        "format": "<span color=\"#747883\">{icon}</span>    {volume}%",
+        "format": "<span color=\"#cb4a6f\">{icon}</span>    {volume}%",
         "format-muted": "",
         "format-icons": {
             "headphones": "",

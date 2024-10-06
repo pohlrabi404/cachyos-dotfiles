@@ -22,6 +22,7 @@ hook = "killall -SIGUSR1 kitty"
 file = "~/.config/qutebrowser/config.py"
 template = "qutebrowser"
 hook = "qutebrowser ':config-source'"
+light = false
 
 [[items]]
 file = "~/.config/waybar/style.css"
