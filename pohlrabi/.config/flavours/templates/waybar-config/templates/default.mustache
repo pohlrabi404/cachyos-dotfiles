@@ -5,7 +5,7 @@
     "margin": "20 30 0 30",
     //"width": 120, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["sway/window", "clock", "clock#date"],
+    "modules-left": ["sway/window", "clock", "clock#date", "disk"],
     "modules-center": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-right": ["cpu", "memory", "pulseaudio", "battery", "network", "tray" ],
     "mode": {
@@ -37,6 +37,10 @@
              "focused": "",
              "default": ""
          }
+     },
+     "disk": {
+        "interval": 30,
+        "format": "<span color=\"#{{base08-hex}}\"></span>   {percentage_used}%",
      },
     "sway/window": {
       "format": "",

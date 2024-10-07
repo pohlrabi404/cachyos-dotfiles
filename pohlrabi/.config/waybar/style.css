@@ -70,7 +70,7 @@ window#waybar.hidden {
     margin: 0 10px 0 0;
 }
 
-#clock, #date, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+#clock, #disk, #date, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
     padding: 0 20px;
     margin: 0 10px;
     background-color: @base00;
