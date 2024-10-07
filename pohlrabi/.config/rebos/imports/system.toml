@@ -66,8 +66,16 @@ items = [
 
   # Browser
   "qutebrowser",
+  "python-adblock",
+  "yt-dlp",
+  "yt-dlp-drop-in",
+  "mpv",
 
   # Javascript
   "nodejs",
 
+  # Note taking - Latex related
+  "obsidian",
+  "tectonic",
+  "deno",
 ]

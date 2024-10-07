@@ -2,6 +2,8 @@ config.load_autoconfig(True)
 config.bind('f', 'set statusbar.show never ;; hint')
 config.bind('lb', ':bookmark-load -t')
 config.bind('<Escape>', 'set statusbar.show in-mode;; fake-key <Escape>')
+config.bind(';y', 'hint links spawn mpv {hint-url}')
+config.bind(';nw', 'tab-give')
 # Search Engine
 c.url.searchengines = {
   'DEFAULT':  'https://google.com/search?hl=en&q={}',
@@ -13,17 +15,17 @@ c.url.start_pages = [
 ]
 
 c.tabs.title.format = ""
-c.tabs.width = 62
-c.tabs.favicons.scale = 3.0
+c.tabs.width = 38
+c.tabs.favicons.scale = 1.5
 c.tabs.position = "left"
 c.tabs.padding = {
-        "bottom": 20,
-        "top": 20,
-        "left": 0,
+        "bottom": 10,
+        "top": 10,
+        "left": 6,
         "right": 0,
         }
 c.tabs.last_close = "close"
-c.tabs.indicator.width = 3
+c.tabs.indicator.width = 0
 
 c.scrolling.smooth = True
 c.scrolling.bar = "always"
