@@ -19,9 +19,18 @@ function config()
   cd ~/.config 
 }
 
+# Config repo
 function pconfig()
 {
   cd ~/dotfiles/pohlrabi/.config
+  sshlogin ~/.ssh/id_cachdot
+  nvim
+}
+# Note repo
+function pnote()
+{
+  cd ~/documents/notes
+  sshlogin ~/.ssh/id_note
   nvim
 }
 
