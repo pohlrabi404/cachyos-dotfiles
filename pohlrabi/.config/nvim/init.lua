@@ -11,13 +11,12 @@ vim.opt.incsearch = true
 vim.opt.title = true
 vim.opt.undofile = true
 vim.opt.fillchars:append(',eob: ')
-vim.opt.autowriteall = true
-vim.opt.clipboard = "unnamedplus"
+
+vim.keymap.set('n', '<leader>to', function() vim.opt.scrolloff = 999 - vim.o.scrolloff end)
 
 vim.cmd("set ignorecase smartcase")
 
 -- Basic keymapping
-vim.keymap.set('n', '<leader>to', function() vim.opt.scrolloff = 999 - vim.o.scrolloff end)
 vim.keymap.set('n', 'ge', '<End>')
 vim.keymap.set('n', 'gs', '<Home>')
 vim.keymap.set('n', 'gm', '%')
