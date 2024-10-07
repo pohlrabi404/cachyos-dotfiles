@@ -44,6 +44,7 @@ items = [
 
   # Image viewer
   "ueberzugpp",
+  "viu",
   "chafa",
   "openslide",
 

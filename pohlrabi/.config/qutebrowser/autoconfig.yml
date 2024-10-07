@@ -38,4 +38,4 @@ settings:
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
   statusbar.show:
-    global: never
+    global: in-mode

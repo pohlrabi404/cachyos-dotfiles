@@ -1,9 +1,16 @@
 return {
-  'nvim-lua/popup.nvim',
-  'nvim-lua/plenary.nvim',
-  'nvim-telescope/telescope.nvim',
-  'nvim-telescope/telescope-media-files.nvim',
+  "dharmx/telescope-media.nvim",
   config = function()
-    require('telescope').load_extension('media_files')
-  end
+    require('telescope').setup({
+      extensions = {
+        media = {
+          backend = 'ueberzug',
+          flag = {
+            ueberzug = { xmove = -12, ymove = -3, warnings = true, supress_backend_warning = false }
+          },
+        },
+      },
+    })
+    require('telescope').load_extension('media')
+  end,
 }

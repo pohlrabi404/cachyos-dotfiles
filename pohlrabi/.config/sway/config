@@ -169,15 +169,10 @@ gaps {
 }
 
 # Blur
-blur enable
+blur enable 
 blur {
-    xray disable
-    passes 2
-    radius 2
-    noise 0.1
-    brightness 0.5
-    constrast 0.5
-    saturation 0.5
+    xray enable 
+    passes 0
 }
 
 #Corner radius
@@ -193,7 +188,7 @@ shadow_offset 0 0
 
 default_dim_inactive 0.3
 
-for_window [all] opacity 0.95
+for_window [all] opacity 0.90
 for_window [title=".*YouTube.*"] opacity 1
 
 exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
