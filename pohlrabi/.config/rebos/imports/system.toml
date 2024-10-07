@@ -69,4 +69,7 @@ items = [
 
   # Javascript
   "nodejs",
+
+  # Note taking
+  "deno",
 ]

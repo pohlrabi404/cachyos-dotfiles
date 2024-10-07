@@ -1,6 +1,7 @@
 config.load_autoconfig(True)
 config.bind('f', 'set statusbar.show never ;; hint')
-config.bind('lb', ':bookmark-load -t')
+config.bind('lb', ':bookmark-load -t {link}')
+config.bind('tg', ':tab-give')
 config.bind('<Escape>', 'set statusbar.show in-mode;; fake-key <Escape>')
 # Search Engine
 c.url.searchengines = {
