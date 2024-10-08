@@ -1,20 +1,20 @@
 # Start flavours
-set $base00 #33264f
-set $base01 #56486b
-set $base02 #786a87
-set $base03 #9a8ca3
-set $base04 #bcafbf
-set $base05 #ded1db
-set $base06 #e3d8e0
-set $base07 #e8dee5
-set $base08 #8168cb
-set $base09 #c55461
-set $base0A #5d79aa
-set $base0B #ad4cd4
-set $base0C #6b5fff
-set $base0D #5e7d8b
-set $base0E #7d5aff
-set $base0F #6f63f5
+set $base00 #25243a
+set $base01 #49475b
+set $base02 #6d6a7c
+set $base03 #908d9d
+set $base04 #b4b0be
+set $base05 #d8d3df
+set $base06 #dedae4
+set $base07 #e3e0e9
+set $base08 #727a77
+set $base09 #b65f5c
+set $base0A #747978
+set $base0B #cb4a6f
+set $base0C #7573a9
+set $base0D #847195
+set $base0E #867097
+set $base0F #7872a7
 # End flavours
 
 set $mod Mod4
@@ -124,14 +124,10 @@ exec swayidle -w \
 
 # Layout stuff:
 #
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
-
+    bindsym $mod+b split horizontal 
+    bindsym $mod+v split vertical 
     # Switch the current container between different layout styles
-    bindsym $mod+e layout toggle split
+    bindsym $mod+e layout toggle all 
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
