@@ -11,6 +11,10 @@ vim.opt.incsearch = true
 vim.opt.title = true
 vim.opt.undofile = true
 vim.opt.fillchars:append(',eob: ')
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>to', function() vim.opt.scrolloff = 999 - vim.o.scrolloff end)
 
@@ -41,10 +45,16 @@ vim.keymap.set("n", "<leader>zb", "<cmd>Telekasten show_backlinks<CR>")
 vim.keymap.set("n", "<leader>zi", "<cmd>Telekasten insert_img_link<CR>")
 vim.keymap.set("n", "<leader>zp", "<cmd>PeekOpen<CR>")
 vim.keymap.set("n", "<leader>zc", "<cmd>PeekClose<CR>")
+vim.keymap.set("n", "<leader>ot", "<cmd>ObsidianBridgeToggle<CR>")
+vim.keymap.set("n", "<leader>or", "<cmd>ObsidianBridgeToggle<CR><cmd>ObsidianBridgeToggle<CR>")
+vim.keymap.set("n", "<leader>og", "<cmd>ObsidianBridgeOpenGraph<CR>")
+vim.keymap.set("n", "<leader>td", "<cmd>Telekasten toggle_todo<CR>")
+
+vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, { command = "silent! update" })
 
 -- Call insert link automatically when we start typing a link
 vim.keymap.set("i", ";;", "<cmd>Telekasten insert_link<CR>")
 vim.cmd [[
-hi tkLink ctermfg=Blue cterm=bold,underline guifg=blue gui=bold,underline
+hi tkLink ctermfg=Red cterm=bold,underline guifg=yellow gui=bold,underline
 hi tkBrackets ctermfg=gray guifg=gray
 ]]

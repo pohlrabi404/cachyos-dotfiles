@@ -73,4 +73,5 @@ items = [
 
   # Note taking
   "deno",
+  "obsidian",
 ]

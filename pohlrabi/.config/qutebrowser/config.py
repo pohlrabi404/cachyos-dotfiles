@@ -50,22 +50,22 @@ c.window.transparent = True
 # Template author: theova
 # Commentary: Tinted Theming: (https://github.com/tinted-theming)
 # Start flavours
-base00 = "#25243a"
-base01 = "#49475b"
-base02 = "#6d6a7c"
-base03 = "#908d9d"
-base04 = "#b4b0be"
-base05 = "#d8d3df"
-base06 = "#dedae4"
-base07 = "#e3e0e9"
-base08 = "#727a77"
-base09 = "#b65f5c"
-base0A = "#747978"
-base0B = "#cb4a6f"
-base0C = "#7573a9"
-base0D = "#847195"
-base0E = "#867097"
-base0F = "#7872a7"
+base00 = "#000000"
+base01 = "#56486b"
+base02 = "#786a87"
+base03 = "#9a8ca3"
+base04 = "#bcafbf"
+base05 = "#ded1db"
+base06 = "#e3d8e0"
+base07 = "#e8dee5"
+base08 = "#8168cb"
+base09 = "#c55461"
+base0A = "#5d79aa"
+base0B = "#ad4cd4"
+base0C = "#6b5fff"
+base0D = "#5e7d8b"
+base0E = "#7d5aff"
+base0F = "#6f63f5"
 # End flavours
 # set qutebrowser colors
 
