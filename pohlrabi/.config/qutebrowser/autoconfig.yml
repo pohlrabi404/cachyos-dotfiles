@@ -15,6 +15,14 @@ settings:
       wqa: quit --save
   auto_save.session:
     global: true
+  bindings.commands:
+    global:
+      insert:
+        <Escape>: mode-leave ;; jseval -q document.activeElement.blur()
+      normal:
+        f: set statusbar.show never ;; hint
+        lb: :bookmark-load -t {link}
+        tg: :tab-give
   bindings.key_mappings:
     global:
       <Ctrl-6>: <Ctrl-^>

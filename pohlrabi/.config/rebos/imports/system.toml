@@ -67,6 +67,8 @@ items = [
 
   # Browser
   "qutebrowser",
+  # Adblock
+  "python-adblock",
 
   # Javascript
   "nodejs",
@@ -74,4 +76,8 @@ items = [
   # Note taking
   "deno",
   "obsidian",
+
+  # Wireshark
+  "wireshark-qt",
+
 ]
